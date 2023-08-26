@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Tables</title>
+
+    <!-- Main CSS -->
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      img {
+        height: 150px;
+        width: 90px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      .section {
+        padding: 20px 0;
+      }
+
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+
+      th,
+      td {
+        padding: 4px;
+      }
+
+      .table_hoby tr:nth-child(2) {
+        background-color: green;
+      }
+
+      .table_movie tr:nth-child(3) {
+        background-color: red;
+      }
+
+      .table_song tr:nth-child(4) {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Tabel Hobby Start -->
+      <section class="hobby section">
+        <div class="hobby_container container">
+          <h1 class="section_title">Daftar Hobi</h1>
+          <table border class="table_hoby">
+            <tr>
+              <th>No.</th>
+              <th>Nama</th>
+              <th>Gambar</th>
+              <th>Deskripsi</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sepak Bola</td>
+              <td><img src="https://imgx.sonora.id/crop/0x0:0x0/x/photo/2022/01/03/soccer-ball-2121x1414jpg-20220103123933.jpg" /></td>
+              <td>
+                Sepak bola adalah olahraga tim yang dimainkan oleh dua tim yang masing-masing terdiri dari 11 pemain dengan menggunakan bola
+                bundar. Tujuan dari permainan ini adalah untuk mencetak gol dengan cara menendang, menyundul, atau merebut bola dari lawan
+                dan memasukkannya ke gawang lawan. Tim yang mencetak gol paling banyak pada akhir pertandingan adalah pemenangnya.
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Futsal</td>
+              <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Futebol_Salao_Pan2007.jpg" /></td>
+              <td>
+                Futsal adalah olahraga bola yang dimainkan oleh dua tim yang masing-masing terdiri dari lima pemain dengan menggunakan bola
+                bundar. Tujuan dari permainan ini adalah untuk mencetak gol dengan cara menendang, menyundul, atau merebut bola dari lawan
+                dan memasukkannya ke gawang lawan. Tim yang mencetak gol paling banyak pada akhir pertandingan adalah pemenangnya. Futsal
+                dimainkan di lapangan yang lebih kecil dari lapangan sepak bola dan menggunakan bola yang lebih kecil. Futsal juga lebih
+                cepat dan lebih intens daripada sepak bola.
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Riding</td>
+              <td>
+                <img
+                  src="https://torch.id/cdn/shop/articles/1662969198_1662969109_1662968917_arti_20riding_d8b0a9cf-0ea5-4de9-bbc2-2cfc20f06872_2000x.jpg?v=1679553788"
+                />
+              </td>
+              <td>
+                Riding adalah aktivitas mengendarai sepeda motor. Riding dapat dilakukan untuk kesenangan, olahraga, atau transportasi.
+                Riding dapat dilakukan di berbagai medan, mulai dari jalan raya hingga off-road. Riding dapat menjadi aktivitas yang sangat
+                menyenangkan dan menantang. Riding juga dapat menjadi cara yang baik untuk menjaga kesehatan dan kebugaran.
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Desain UI</td>
+              <td>
+                <img
+                  src="https://buildwithangga.com/storage/assets/thumbnail_tips/3-Aplikasi-Paling-Sering-Digunakan-Oleh-UI-UX-Designer-2023-(1).png"
+                />
+              </td>
+              <td>
+                Desain UI adalah proses menciptakan antarmuka pengguna yang mudah digunakan dan menarik. Desainer UI bekerja dengan elemen
+                visual seperti warna, font, dan tata letak untuk membuat antarmuka yang menarik dan mudah dinavigasi. Mereka juga bekerja
+                dengan elemen fungsional seperti tombol, menu, dan kontrol untuk membuat antarmuka yang mudah digunakan.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- Tabel Hobby End -->
+
+      <!-- Tabel Movie Start -->
+      <section class="movie section">
+        <div class="movie_container container">
+          <h1 class="section_title">Daftar Film Kesukaan</h1>
+          <table border="1" class="table_movie">
+            <tr>
+              <th>No</th>
+              <th>Nama Film</th>
+              <th>Tahun Tayang</th>
+              <th>Durasi</th>
+              <th>Produksi</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Fast X</td>
+              <td>2023</td>
+              <td>2 jam 21 menit</td>
+              <td>Universal Studios</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Transformers: Rise of the Beasts</td>
+              <td>2023</td>
+              <td>2 jam 7 menit</td>
+              <td>Paramount Pictures</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Resident Evil: Death Island</td>
+              <td>2023</td>
+              <td>1 jam 31 menit</td>
+              <td>Sony Picture</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>The Big 4</td>
+              <td>2022</td>
+              <td>2 jam 21 menit</td>
+              <td>Netflix</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- Tabel Movie End -->
+
+      <!-- Tabel Song Start -->
+      <section class="song section">
+        <div class="song_container container">
+          <h1>Daftar Lagu Kesukaan</h1>
+          <table border class="table_song">
+            <tr>
+              <th>No</th>
+              <th>Judul Lagu</th>
+              <th>Penyanyi</th>
+              <th>Durasi</th>
+              <th>Tahun</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Nemen</td>
+              <td>Guyon Waton</td>
+              <td>4.49</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Sanes</td>
+              <td>Guyon Waton ft Denny Caknan</td>
+              <td>5.02</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Klebus</td>
+              <td>Guyon Waton</td>
+              <td>4.58</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Crito Musthail</td>
+              <td>Guyon Waton</td>
+              <td>4.42</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Widodari</td>
+              <td>Denny Caknan ft Guyon Waton</td>
+              <td>4.55</td>
+              <td>2022</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- Tabel Song End -->
+    </main>
+  </body>
+</html>
