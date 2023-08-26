@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="aseets/styles/style.css" />
+
+    <title>Form Pendaftaran Pemuda Pancasila</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Form Pendaftaran Pemuda Pancasila</h1>
+      <p class="subtitle">Harap diisi dengan jujur serta dengan tempo yang sesingkat-singkatnya</p>
+    </header>
+
+    <!-- Form -->
+    <section class="form_section">
+      <form onsubmit="alert('Silahkan tunggu'); alert('Jangan lupa jaga keamanan hajatan terdekat')">
+        <!-- Nama -->
+        <div class="nama_group">
+          <div>
+            <label for="nama_depan">Nama depan</label>
+            <br />
+            <input type="text" id="nama_depan" placeholder="Masukkan nama depan disini" required autofocus />
+          </div>
+          <div>
+            <label for="nama_belakang">Nama belakang</label>
+            <br />
+            <input type="text" id="nama_belakang" placeholder="Masukkan nama nama_belakang disini" required />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="input_area">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Masukkan email disini" required />
+        </div>
+
+        <!-- Password -->
+        <div class="input_area">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Masukkan password disini" required />
+        </div>
+
+        <!-- No telefon -->
+        <div class="input_area">
+          <label for="no_telefon">Nomor Telefon</label>
+          <input id="no_telefon" type="tel" placeholder="masukkan nomor telefon disini" required />
+        </div>
+
+        <!-- Jenis Kelamin -->
+        <div class="input_area">
+          <p>Jenis Kelamin :</p>
+          <input id="laki_laki" type="radio" name="jenis_kelamin" value="Laki-laki" />
+          <label for="laki_laki">Laki-laki</label>
+          <br />
+          <input id="perempuan" type="radio" name="jenis_kelamin" value="Perempuan" />
+          <label for="perempuan">Perempuan</label>
+          <br />
+        </div>
+
+        <!-- Umur -->
+        <div class="input_area">
+          <label for="umur">Umur</label>
+          <input id="umur" type="number" placeholder="Masukkan umur disini" />
+        </div>
+
+        <!-- Sosial Media -->
+        <div class="input_area">
+          <p>Media sosial yang digunakan :</p>
+          <label for="fb_sosmed">Facebook</label>
+          <input id="fb_sosmed" type="url" />
+          <br />
+          <label for="ig_sosmed">Instagram</label>
+          <input id="ig_sosmed" type="url" />
+        </div>
+
+        <!-- Sertifikat -->
+        <div class="input_area">
+          <label for="sertifikat">Sertifikat yang dimiliki</label>
+          <input id="sertifikat" type="file" />
+        </div>
+
+        <!-- Alasan ingin bergabung -->
+        <div class="input_area">
+          <label for="alasan">Alasan ingin bergabung</label>
+          <br />
+          <textarea id="alasan" cols="50" rows="5" placeholder="Tuliskan alasan anda ingin bergabung"></textarea>
+        </div>
+
+        <!-- Checklist -->
+        <input id="check" type="checkbox" required />
+        <label for="check">Saya bersedia mengikuti peraturan dan mengamankan hajatan</label>
+        <br />
+
+        <input class="btn_main" type="submit" value="Daftar" />
+      </form>
+    </section>
+    <footer><p>Pemuda Pancasila Insan Muda Wakanda</p></footer>
+  </body>
+</html>

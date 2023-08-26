@@ -1,0 +1,20 @@
+img {
+  height: 150px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.banyaknya_tabel {
+  text-align: center;
+}
+
+.harga_tabel,
+.total_tabel {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}

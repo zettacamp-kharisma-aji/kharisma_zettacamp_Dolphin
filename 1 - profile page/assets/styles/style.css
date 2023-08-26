@@ -1,0 +1,99 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+  /* Color */
+  --main-blue: #2888d6;
+  --title-color: #0e0e0e;
+  --description-color: #161616;
+
+  /* Font */
+  --main-font: 'Lato', sans-serif;
+
+  /* Font Size */
+  --p-text-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1040px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+h2 {
+  color: var(--title-color);
+  margin-bottom: 12px;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+  margin-bottom: 24px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.bg_header {
+  width: calc(100% - 50px);
+  height: 200px;
+  background: var(--main-blue);
+  margin-top: 25px;
+  border-radius: 24px;
+}
+
+.profil_img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid rgba(255, 255, 255, 50%);
+}
+
+.deskripsi_diri {
+  color: var(--description-color);
+  max-width: 900px;
+  text-align: center;
+}
+
+.hobi,
+.tentang {
+  width: 50%;
+}
+
+.social_media_img {
+  height: 50px;
+}
+
+footer {
+  text-align: center;
+}

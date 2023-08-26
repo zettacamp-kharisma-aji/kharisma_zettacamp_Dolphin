@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Shopping List</title>
+  </head>
+  <body>
+    <header>
+      <h1>&#128220;My Shopping List&#128220;</h1>
+      <p>Jangan lupa pesanan emak</p>
+    </header>
+
+    <section>
+      <table border="2">
+        <thead>
+          Daftar barang yang dibeli
+        </thead>
+        <tr style="text-align: center">
+          <th>Nama Barang</th>
+          <th>Gambar</th>
+          <th>Banyaknya</th>
+          <th>Harga (Rp)</th>
+          <th>Total (Rp)</th>
+        </tr>
+        <tr>
+          <td>Sunlight</td>
+          <td>
+            <img
+              src="https://www.sunlight.co.id/images/h0nadbhvm6m4/1VLa8YgpNnTTHS8hVcRpFx/f877e731e3474ef8f0b991083e3d69a1/U3VubGlnaHRfSmVydWtfTmlwaXMxLnBuZw/1080w-1080h/sunlight-jeruk-nipis.jpg"
+              alt="Gambar Sunlight berwarna hijau"
+            />
+          </td>
+          <td class="banyaknya_tabel">1</td>
+          <td class="harga_tabel">5000</td>
+          <td class="total_tabel">5000</td>
+        </tr>
+        <tr>
+          <td>
+            Masako
+            <ul>
+              <li>Rasa Ayam</li>
+              <li>Rasa Sapi</li>
+              <li>Rasa yang pernah ada</li>
+            </ul>
+          </td>
+          <td>
+            <img
+              src="https://storage.googleapis.com/dapurumami-test/recipe/Kemasan%20Masako%2040g%20Rasa%20Ayam-9kVNqc1657715548.png"
+              alt="masako sachet rasa ayam"
+            />
+          </td>
+          <td class="banyaknya_tabel">3</td>
+          <td class="harga_tabel">500</td>
+          <td class="total_tabel">1500</td>
+        </tr>
+        <tr>
+          <td>
+            Sampo
+            <ol type="a" start="a">
+              <li>
+                Sachet
+                <ul>
+                  <li>Lemon</li>
+                  <li>Mint</li>
+                </ul>
+              </li>
+              <li>
+                Botol
+                <ul>
+                  <li>Lemon</li>
+                  <li><del>Mentol</del></li>
+                </ul>
+              </li>
+            </ol>
+          </td>
+          <td>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="shampo head and shoulder botolan warna biru"
+            />
+          </td>
+          <td class="banyaknya_tabel">4</td>
+          <td class="harga_tabel">12000</td>
+          <td class="total_tabel">48000</td>
+        </tr>
+        <tr>
+          <td class="center"><strong>Total Harga</strong></td>
+          <td class="center" colspan="4"><strong>Rp 68000</strong></td>
+        </tr>
+      </table>
+    </section>
+    <footer><p>Dari emak oleh kita untuk emak</p></footer>
+  </body>
+</html>
