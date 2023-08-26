@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
+    <title>Register | YMS</title>
+  </head>
+  <body>
+    <main class="register_main">
+      <!-- Left Section Start -->
+      <section class="section register_left">
+        <div class="register_desc">
+          <!-- <p class="register_desc_title">Your Music Soul</p> -->
+          <img src="../assets/img/Right Side.png" />
+        </div>
+      </section>
+      <!-- Left Section End -->
+
+      <!-- Form Section Start -->
+      <section class="section register_forms">
+        <div class="register_form_area">
+          <span>Selamat Datang</span>
+          <h2>Daftar dan dengar lagu favoritmu di Your Music Soul</h2>
+          <form onsubmit="window.location.href = 'profile.html'; return false;">
+            <!-- Input Nama Lengkap -->
+            <input class="input_area" type="text" placeholder="Nama Lengkap" required />
+
+            <!-- Input Username -->
+            <input class="input_area" type="text" placeholder="Username" required />
+
+            <!-- Input Email -->
+            <input class="input_area" type="email" placeholder="email@mail.com" required />
+
+            <!-- Input no telf -->
+            <input class="input_area" type="tel" placeholder="Nomor telefon" required />
+
+            <!-- Input Password -->
+            <input class="input_area" type="password" placeholder="kata sandi disini" required />
+
+            <!-- Radio Tipe Akun -->
+            <p>Tipe akun :</p>
+            <div>
+              <input id="free_plan" type="radio" name="tipe_akun" value="Free Plan" required />
+              <label for="free_plan">Free Plan</label>
+            </div>
+
+            <div>
+              <input id="bestfriend_plan" type="radio" name="tipe_akun" value="BestFriend Plan" required />
+              <label for="bestfriend_plan">BestFriend Plan</label>
+            </div>
+
+            <div>
+              <input id="soulmate_plan" type="radio" name="tipe_akun" value="Soulmate Plan" required />
+              <label for="soulmate_plan">Soulmate Plan</label>
+            </div>
+
+            <!-- Daftar Button -->
+            <input class="btn btn_main btn_daftar" type="submit" value="Daftar" />
+          </form>
+        </div>
+      </section>
+      <!-- Form Section End -->
+    </main>
+  </body>
+</html>
