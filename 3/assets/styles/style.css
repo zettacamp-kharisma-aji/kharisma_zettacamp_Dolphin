@@ -1,0 +1,149 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --header-height: 40px;
+
+  /* Color */
+  --black-main-color: #212121;
+  --green-logo-color: #03ac0e;
+  --green-main-color: #1fb46f;
+  --gray-color: rgba(124, 131, 146, 1);
+
+  /* Font */
+  --body-font: 'Plus Jakarta Sans', sans-serif;
+
+  --regular-weight: 400;
+  --semi-bold-weight: 500;
+  --medium-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+}
+
+body {
+  color: var(--black-main-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(228, 8%, 76%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(228, 8%, 64%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(228, 8%, 54%);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.item_card {
+  width: 40%;
+}
+
+.card_title {
+  font-size: 26px;
+  font-weight: var(--medium-weight);
+  text-align: center;
+  margin-bottom: 16px;
+  text-decoration: underline;
+}
+
+.card_lists {
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.card_list {
+  display: flex;
+  height: 117px;
+  background-color: white;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(124, 131, 146, 0.6);
+  transition: 0.4s;
+}
+
+.card_list:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.card_list:hover {
+  border-color: var(--green-main-color);
+  transform: translateX(-5px);
+  box-shadow: 0px 7px 16px -7px rgba(0, 0, 0, 0.26);
+}
+
+.card_list_img {
+  height: 93px;
+  width: 93px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card_list_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_list_name {
+  font-size: 20px;
+  font-weight: var(--medium-weight);
+  line-height: 110%;
+}
+
+.card_list_price {
+  font-size: 16px;
+  font-weight: var(--medium-weight);
+  color: var(--green-main-color);
+}
+
+.card_list_desc {
+  font-size: 14px;
+  font-weight: var(--semi-bold-weight);
+}
+
+footer {
+  padding: 16px 0;
+  text-align: center;
+  color: white;
+  background-color: #03ac0e;
+}
