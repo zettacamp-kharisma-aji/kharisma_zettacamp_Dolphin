@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Box Icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <title>Tambahkan Barang Belanja</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="header_container container">
+        <div class="header_logos">
+          <a class="header_logo" href="index.html">Shipii</a>
+        </div>
+        <nav class="menu_list">
+          <a class="menu_link" href="index.html">Home</a>
+          <a class="menu_link" href="shopping-list.html">Shopping List</a>
+          <a class="menu_link" href="about-me.html">About</a>
+          <a class="menu_link" href="contact-me.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <section class="add_item section">
+        <div class="add_item_container container">
+          <h1 class="section_title" style="text-align: center">Tambahkan Barang Belanja</h1>
+          <p class="section_desc" style="text-align: center">Silahkan mengisi barang yang ingin dibeli melalui form dibawah ini</p>
+          <!-- Kontak Form Area -->
+          <div class="add_item_form">
+            <form onsubmit="alert('Barang sudah ditambah, jangan lupa nabung')">
+              <!-- Form Nama -->
+              <div>
+                <label required for="nama">Nama Barang</label>
+                <input id="nama" type="text" placeholder="Nama barang disini" required />
+              </div>
+
+              <!-- Form Harga -->
+              <div>
+                <label required for="harga">Harga</label>
+                <input id="harga" type="number" placeholder="Harga disini" required />
+              </div>
+
+              <!-- Form Gambar -->
+              <div>
+                <label required for="barang_img">Gambar Barang</label>
+                <input id="barang_img" type="file" placeholder="Gambar barang disini" />
+              </div>
+
+              <!-- Form Deskripsi Barang -->
+              <div>
+                <label required for="barang_desc">Deskripsi barang</label>
+                <textarea id="barang_desc" name="barang_desc" rows="4" cols="50" required></textarea>
+              </div>
+
+              <!-- Btn Kirim -->
+              <input class="btn_submit" type="submit" value="Tambahkan barang" />
+            </form>
+          </div>
+
+          <h1 class="section_title" style="text-align: center">Barang Tersedia</h1>
+          <p class="section_desc" style="text-align: center; margin-bottom: 20px">Berikut barang yang tersedia</p>
+
+          <!-- Barang Tersedia Card -->
+          <div class="container_products">
+            <!-- Produk 1 -->
+            <div class="product_card">
+              <div class="product_imgs">
+                <img class="product_img" src="https://technokomputerbali.com/img/item/220416120539.jpg" />
+              </div>
+              <span class="product_label">Terlaris</span>
+              <h2 class="product_name">Fantech HG 23 Octane</h2>
+              <span class="product_price">Rp 240000</span>
+              <p class="product_desc">Headset reccomended buat kamu yang suka gaming</p>
+              <a class="btn_beli">Tambahkan</a>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="product_card">
+              <div class="product_imgs">
+                <img class="product_img" src="https://lzd-img-global.slatic.net/g/p/77694c623fd43f795b8b050ff51cf2f7.jpg_720x720q80.jpg" />
+              </div>
+              <span class="product_label">Terlaris</span>
+              <h2 class="product_name">Keyboard Keychrone</h2>
+              <span class="product_price">Rp 1000000</span>
+              <p class="product_desc">Keyboard fenomenal yang nyaman untuk berbagai keperluan</p>
+              <a class="btn_beli">Tambahkan</a>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="product_card">
+              <div class="product_imgs">
+                <img
+                  class="product_img"
+                  src="https://fantechmalaysia.com.my/image/inno/image/cache/data/all_product_images/product-532/03af779f95626be17436d0b9a791ae6b-1000x1000.jpg"
+                />
+              </div>
+              <span class="product_label">Terlaris</span>
+              <h2 class="product_name">Fantech MPR800</h2>
+              <span class="product_price">Rp 160000</span>
+              <p class="product_desc">Rasakan pengalaman menggunakan mousepad yang tak tergoyahkan bagai batu</p>
+              <a class="btn_beli">Tambahkan</a>
+            </div>
+
+            <!-- Produk 4 -->
+            <div class="product_card">
+              <div class="product_imgs">
+                <img
+                  class="product_img"
+                  src="data:image/jpeg;base64,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"
+                />
+              </div>
+              <span class="product_label">Terlaris</span>
+              <h2 class="product_name">ROG Strix G15</h2>
+              <span class="product_price">Rp 12000000</span>
+              <p class="product_desc">Laptop buat pecinta gaming, game berat libas habis</p>
+              <a class="btn_beli">Tambahkan</a>
+            </div>
+
+            <!-- Produk 5 -->
+            <div class="product_card">
+              <div class="product_imgs">
+                <img
+                  class="product_img"
+                  src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/11/16/dbe0cbe8-2f66-4614-bb9c-3e698ab9aebb.jpg"
+                />
+              </div>
+              <span class="product_label">Terlaris</span>
+              <h2 class="product_name">Monitor Acer K243Y</h2>
+              <span class="product_price">Rp 1550000</span>
+              <p class="product_desc">Monitor editing dengan akurasi warna 100srgb</p>
+              <a class="btn_beli">Tambahkan</a>
+            </div>
+
+            <!-- Produk 6 -->
+            <div class="product_card">
+              <div class="product_imgs">
+                <img
+                  class="product_img"
+                  src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/11/15/6b574cf8-5f54-406e-9b7b-c9a19260fa11.jpg"
+                />
+              </div>
+              <span class="product_label">Terlaris</span>
+              <h2 class="product_name">Deli Office Chair Kursi</h2>
+              <span class="product_price">Rp 550000</span>
+              <p class="product_desc">Investasi diri dengan beli kursi kerja yang nyaman</p>
+              <a class="btn_beli">Tambahkan</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="section">
+      <div class="footer_container container">
+        <!-- Footer 1 -->
+        <div>
+          <p class="footer_title">Tentang</p>
+          <div class="footer_links">
+            <a class="footer_link">Tentang Kami</a>
+            <a class="footer_link">Layanan</a>
+            <a class="footer_link">Blog</a>
+          </div>
+        </div>
+
+        <!-- Footer 2 -->
+        <div>
+          <p class="footer_title">Perusahaan</p>
+          <div class="footer_links">
+            <a class="footer_link">Cara Kerja</a>
+            <a class="footer_link">Keamanan</a>
+          </div>
+        </div>
+
+        <!-- Footer 3 -->
+        <div>
+          <p class="footer_title">Bantuan</p>
+          <div class="footer_links">
+            <a class="footer_link">Pusat Bantuan</a>
+            <a class="footer_link">FAQ</a>
+            <a class="footer_link">Kontak Kami</a>
+          </div>
+        </div>
+
+        <!-- Footer 4 -->
+        <div>
+          <p class="footer_title">Sosial Media</p>
+          <a href="#">
+            <i class="bx bxl-instagram footer_icon"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-twitter footer_icon"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-facebook-circle footer_icon"></i>
+          </a>
+        </div>
+      </div>
+      <div style="text-align: center">Shipii 2023. Gratis ongkir sepuasnya</div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>

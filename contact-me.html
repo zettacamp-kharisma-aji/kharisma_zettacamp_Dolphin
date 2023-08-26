@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Box Icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="header_container container">
+        <div class="header_logos">
+          <a class="header_logo" href="index.html">Shipii</a>
+        </div>
+        <nav class="menu_list">
+          <a class="menu_link" href="index.html">Home</a>
+          <a class="menu_link" href="shopping-list.html">Shopping List</a>
+          <a class="menu_link" href="about-me.html">About</a>
+          <a class="menu_link menu_link_active" href="contact-me.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <section class="kontak section">
+        <div class="kontak_container container">
+          <!-- Kontak Description -->
+          <div>
+            <h1 class="section_title">Beri masukan untuk kami</h1>
+            <p class="section_desc">Kami dengan senang hati mendengarkan masukan dari pelanggan setia</p>
+            <img class="kontak_img" src="assets/img/contact_img.jpg" alt="customer service image" />
+          </div>
+
+          <!-- Kontak Form Area -->
+          <div>
+            <form onsubmit="alert('Pesan telah dikirim, mohon ditunggu dan SABAR!!!!')">
+              <!-- Form Nama -->
+              <div>
+                <label required for="nama">Nama</label>
+                <input id="nama" type="text" placeholder="Nama disini" required />
+              </div>
+
+              <!-- Form Email -->
+              <div>
+                <label required for="email">Email</label>
+                <input id="email" type="email" placeholder="Email disini" required />
+              </div>
+
+              <!-- Form Nomor Telefon -->
+              <div>
+                <label for="no_telf">Nomor telefon</label>
+                <input id="no_telf" type="tel" placeholder="No telefon disini" />
+              </div>
+
+              <!-- Form Pesan -->
+              <div>
+                <label required for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="4" cols="50" required></textarea>
+              </div>
+
+              <!-- Btn Kirim -->
+              <input class="btn_submit" type="submit" value="Kirim pesan" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Start -->
+    <footer class="section">
+      <div class="footer_container container">
+        <!-- Footer 1 -->
+        <div>
+          <p class="footer_title">Tentang</p>
+          <div class="footer_links">
+            <a class="footer_link">Tentang Kami</a>
+            <a class="footer_link">Layanan</a>
+            <a class="footer_link">Blog</a>
+          </div>
+        </div>
+
+        <!-- Footer 2 -->
+        <div>
+          <p class="footer_title">Perusahaan</p>
+          <div class="footer_links">
+            <a class="footer_link">Cara Kerja</a>
+            <a class="footer_link">Keamanan</a>
+          </div>
+        </div>
+
+        <!-- Footer 3 -->
+        <div>
+          <p class="footer_title">Bantuan</p>
+          <div class="footer_links">
+            <a class="footer_link">Pusat Bantuan</a>
+            <a class="footer_link">FAQ</a>
+            <a class="footer_link">Kontak Kami</a>
+          </div>
+        </div>
+
+        <!-- Footer 4 -->
+        <div>
+          <p class="footer_title">Sosial Media</p>
+          <a href="#">
+            <i class="bx bxl-instagram footer_icon"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-twitter footer_icon"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-facebook-circle footer_icon"></i>
+          </a>
+        </div>
+      </div>
+      <div style="text-align: center">Shipii 2023. Gratis ongkir sepuasnya</div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
