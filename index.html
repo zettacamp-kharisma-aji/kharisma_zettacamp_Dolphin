@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Box Icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Book Collection</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="header_container container">
+        <div class="header_logos">
+          <a class="header_logo">My Book</a>
+        </div>
+        <nav class="menu_lists">
+          <a class="menu_link" href="#">Home</a>
+          <a class="menu_link" href="#">Book List</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+    <main>
+      <section class="tabel section">
+        <div class="tabel_container container">
+          <!-- Title section and add button -->
+          <div class="title_and_add">
+            <h1 class="section_title">My Book Collection</h1>
+            <i id="tambah_buku" class="bx bx-book-add"></i>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Book Id</th>
+                <th>Title Book</th>
+                <th>Stock</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tabel_body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
