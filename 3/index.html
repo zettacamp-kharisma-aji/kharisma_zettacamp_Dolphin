@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Box Icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <title>Combination of Character</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <!-- <header>
+      <div class="header_container container">
+        <div class="header_logos">
+          <a class="header_logo" href="index.html">Shipii</a>
+        </div>
+        <nav class="menu_list">
+          <a class="menu_link menu_link_active">Home</a>
+        </nav>
+      </div>
+    </header> -->
+    <!-- Header End -->
+    <main>
+      <!-- Section 1 start -->
+      <section class="one section">
+        <div class="one_container container">
+          <h1 class="section_title">Find Combination</h1>
+          <p class="section_desc">Input your sentence with start number and end number on the form below</p>
+          <div class="form_input_area">
+            <form>
+              <!-- Input sentence -->
+              <label for="input_sentence">Sentence</label>
+              <textarea id="input_sentence" name="inputSentence" placeholder="Input your sentence here"></textarea>
+              <div class="number_input_area">
+                <!-- Input start number -->
+                <div class="number_start_input_area">
+                  <label for="input_number_start">Start Number</label>
+                  <input id="input_number_start" name="input_number_start" type="number" placeholder="input start number here" />
+                </div>
+                <!-- Input end number -->
+                <div class="number_end_input_area">
+                  <label for="input_number_end">End Number</label>
+                  <input id="input_number_end" name="input_number_end" type="number" placeholder="input end number here" />
+                </div>
+              </div>
+              <a id="btn_analyze">Analyze <i class="bx bx-analyse"></i></a>
+            </form>
+          </div>
+          <!-- result here -->
+          <h2 id="text_result">Ini namanya hasil</h2>
+          <p id="keterangan"></p>
+        </div>
+      </section>
+      <!-- Section 1 end -->
+    </main>
+    <script src="assets/script/main.js"></script>
+  </body>
+</html>
