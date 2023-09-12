@@ -1,0 +1,16 @@
+.sidebar_links {
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid rgba(124, 131, 146, 0.3);
+  padding-bottom: 6px;
+}
+
+.sidebar_link {
+  font-size: 13px;
+  color: var(--gray-color);
+}
+
+.sidebar_link:hover {
+  text-decoration: underline;
+}

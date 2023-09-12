@@ -1,0 +1,19 @@
+.share_buttons {
+  padding: 5px 0;
+  display: flex;
+  gap: 6px;
+}
+
+.btn-share {
+  font-size: 11px;
+  background-color: var(--gray-color);
+  padding: 12px 5px;
+}
+
+.btn-share:hover {
+  opacity: 80%;
+}
+
+a {
+  color: white;
+}

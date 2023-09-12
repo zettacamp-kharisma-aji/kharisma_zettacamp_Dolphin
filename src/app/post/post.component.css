@@ -1,0 +1,9 @@
+.main_post {
+  display: flex;
+  gap: 10px;
+}
+
+.post_detail {
+  top: 0;
+  position: static;
+}
