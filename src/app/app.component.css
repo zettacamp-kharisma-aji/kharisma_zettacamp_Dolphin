@@ -1,0 +1,103 @@
+.form_input_area {
+  padding: 56px 97px;
+  background-color: var(--white-color);
+  border: 1px solid rgba(124, 131, 146, 0.6);
+  border-radius: 12px;
+}
+
+.name_addres_input_area,
+.price_picture_input_area {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 27px;
+}
+
+.name_input_area,
+.addres_input_area,
+.picture_input_area,
+.price_input_area {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.btn_input_data {
+  cursor: pointer;
+  background-color: var(--green-color);
+}
+
+.properti_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.properti_img_container {
+  position: relative;
+}
+.check_status {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 12px;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.not_checked {
+  background-color: var(--orange-color);
+}
+
+.properti_card {
+  width: 320px;
+  padding: 12px;
+  border: 1px solid rgba(124, 131, 146, 0.6);
+  border-radius: 12px;
+}
+
+.properti_img {
+  width: 100%;
+  height: 213px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.properti_name {
+  font-size: 1.5rem;
+  font-weight: var(--medium-weight);
+  margin-bottom: 4px;
+}
+
+.properti_price {
+  color: var(--green-color);
+  font-weight: var(--medium-weight);
+}
+
+.properti_address {
+  color: var(--gray-color);
+  margin-bottom: 20px;
+}
+.btn_check {
+  cursor: pointer;
+  background-color: var(--orange-color);
+}
+
+.btn_buy {
+  margin-top: 8px;
+  background-color: var(--green-color);
+}
