@@ -1,0 +1,31 @@
+<!-- Section form start -->
+<section class="form section">
+  <app-forms-input (addData)="onAddData($event)"></app-forms-input>
+</section>
+<!-- Section form end -->
+
+<!-- Section Properti List Start -->
+<section class="properti section">
+  <div class="properti_container container">
+    <!-- Properti cards -->
+    <div class="properti_cards">
+      <app-list-all-property
+        *ngFor="let singleProperty of listProperty; let i = index"
+        [indexItem]="i"
+        [listAllProperty]="singleProperty"
+        (changeStatus)="onChangeStatus($event)"
+        (buyProperty)="onBuyProperty($event)"
+      ></app-list-all-property>
+    </div>
+  </div>
+</section>
+<!-- Section Properti List End -->
+
+<!-- Section Status Property Start -->
+<section class="status_property section">
+  <app-list-status-property
+    *ngFor="let singleProperty of listProperty"
+    [statusSingleProperty]="singleProperty"
+  ></app-list-status-property>
+</section>
+<!-- Section Status Property End -->

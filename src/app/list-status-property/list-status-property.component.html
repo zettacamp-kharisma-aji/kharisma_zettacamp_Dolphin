@@ -1,0 +1,35 @@
+<div class="status_property_container container">
+  <div class="property_list_checked">
+    <!-- List Check Property -->
+    <div class="property_lists">
+      <h3 class="property_title_list">Checked Property</h3>
+      <div class="property_list" *ngIf="singleProperty.isCheck">
+        <div class="property_list_imgs">
+          <img class="property_list_img" [src]="singleProperty.linkPicture" />
+        </div>
+        <div class="property_list_detail">
+          <h4 class="property_list_name">{{ singleProperty.name }}</h4>
+          <p class="property_list_price">Rp {{ singleProperty.price }}</p>
+          <p class="property_list_address">{{ singleProperty.address }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- List Uncheck Property Container-->
+  <div class="property_list_unchecked">
+    <h3 class="property_title_list">Unchecked Property</h3>
+    <div class="property_lists">
+      <div class="property_list" *ngIf="!singleProperty.isCheck">
+        <div class="property_list_imgs">
+          <img class="property_list_img" [src]="singleProperty.linkPicture" />
+        </div>
+        <div class="property_list_detail">
+          <h4 class="property_list_name">{{ singleProperty.name }}</h4>
+          <p class="property_list_price">Rp {{ singleProperty.price }}</p>
+          <p class="property_list_address">{{ singleProperty.address }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

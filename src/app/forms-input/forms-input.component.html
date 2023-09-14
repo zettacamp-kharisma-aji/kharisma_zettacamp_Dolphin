@@ -1,0 +1,72 @@
+<div class="form_container container">
+  <h1 class="section_title">Masukkan Nama Properti</h1>
+  <!-- <p class="section_desc">{{ description }}</p> -->
+  <p class="section_desc">Harap masukkan detail properti dengan benar</p>
+  <div class="form_input_area">
+    <div class="form">
+      <!-- Input Name and Addres -->
+      <div class="name_addres_input_area">
+        <!-- Input Name -->
+        <div class="name_input_area">
+          <label for="input_name">Name Properti</label>
+          <input
+            id="input_name"
+            name="input_name"
+            type="text"
+            placeholder="insert name here"
+            required
+            [(ngModel)]="name"
+          />
+        </div>
+        <!-- Input addres -->
+        <div class="addres_input_area">
+          <label for="input_addres">Address</label>
+          <input
+            id="input_addres"
+            name="input_addres"
+            type="text"
+            placeholder="insert address here"
+            required
+            [(ngModel)]="address"
+          />
+        </div>
+      </div>
+
+      <!-- Input Price and Picture -->
+      <div class="price_picture_input_area">
+        <!-- Input Price -->
+        <div class="price_input_area">
+          <label for="input_price">Price</label>
+          <input
+            id="input_price"
+            name="input_price"
+            type="number"
+            placeholder="insert price here"
+            required
+            [(ngModel)]="price"
+          />
+        </div>
+        <!-- Input picture -->
+        <div class="picture_input_area">
+          <label for="input_picture">Picture</label>
+          <input
+            id="input_picture"
+            name="input_picture"
+            type="text"
+            placeholder="insert link picture here"
+            required
+            [(ngModel)]="linkPicture"
+          />
+        </div>
+      </div>
+      <!-- <button class="btn btn_input_data">Add property</button> -->
+      <button
+        class="btn btn_input_data"
+        (click)="inputData(name, address, price, linkPicture)"
+        [disabled]="price === 0"
+      >
+        Add property
+      </button>
+    </div>
+  </div>
+</div>

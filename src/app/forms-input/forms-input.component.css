@@ -1,0 +1,43 @@
+.form_input_area {
+  padding: 56px 97px;
+  background-color: var(--white-color);
+  border: 1px solid rgba(124, 131, 146, 0.6);
+  border-radius: 12px;
+}
+
+.name_addres_input_area,
+.price_picture_input_area {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 27px;
+}
+
+.name_input_area,
+.addres_input_area,
+.picture_input_area,
+.price_input_area {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.btn_input_data {
+  cursor: pointer;
+  background-color: var(--green-color);
+}
+
+/* p {
+  color: blue;
+} */
