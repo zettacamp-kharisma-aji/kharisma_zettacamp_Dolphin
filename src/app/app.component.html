@@ -1,0 +1,48 @@
+<!-- Section form start -->
+<section class="form section">
+  <app-forms-input (addData)="onAddData($event)"></app-forms-input>
+</section>
+<!-- Section form end -->
+
+<!-- Section Properti List Start -->
+<section class="properti section">
+  <div class="properti_container container">
+    <!-- Properti cards -->
+    <div class="properti_cards">
+      <app-list-all-property
+        *ngFor="let singleProperty of listProperty; let i = index"
+        [listAllProperty]="singleProperty"
+        (changeStatus)="onCheckProperty($event)"
+        (buyProperty)="onBuyProperty($event, i)"
+      ></app-list-all-property>
+    </div>
+  </div>
+</section>
+<!-- Section Properti List End -->
+
+<!-- Section Status Property Start -->
+<section class="status_property section">
+  <div class="status_property_container container">
+    <div class="property_list_checked">
+      <div class="property_lists">
+        <h3 class="property_title_list">Checked Property</h3>
+        <!-- componen here -->
+        <app-checked-property
+          *ngFor="let singleProperty of listProperty"
+          [statusSingleProperty]="singleProperty"
+        ></app-checked-property>
+      </div>
+    </div>
+    <div class="property_list_unchecked">
+      <div class="property_lists">
+        <h3 class="property_title_list">Unchecked Property</h3>
+        <!-- componen here -->
+        <app-unchecked-property
+          *ngFor="let singleProperty of listProperty"
+          [statusSingleProperty]="singleProperty"
+        ></app-unchecked-property>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section Status Property End -->

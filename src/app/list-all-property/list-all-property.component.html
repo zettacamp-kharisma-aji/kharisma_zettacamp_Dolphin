@@ -1,0 +1,28 @@
+<div class="properti_card">
+  <div class="properti_img_container">
+    <span class="check_status" *ngIf="singleProperty.isCheck; else notChecked"
+      >Sudah dicek</span
+    >
+    <ng-template #notChecked
+      ><span class="check_status not_checked">Belum dicek</span></ng-template
+    >
+    <img class="properti_img" [src]="singleProperty.linkPicture" />
+  </div>
+  <p class="properti_name">{{ singleProperty.name }}</p>
+  <p class="properti_price">Rp {{ singleProperty.price }}</p>
+  <p class="properti_address">{{ singleProperty.address }}</p>
+  <button class="btn btn_check" (click)="onCheckProperty()">
+    Cek Property
+  </button>
+  <button
+    class="btn btn_buy"
+    (click)="onBuyProperty()"
+    [disabled]="singleProperty.isCheck === false"
+    [ngStyle]="{
+      cursor: singleProperty.isCheck === false ? 'not-allowed' : 'pointer',
+      opacity: singleProperty.isCheck === false ? '0.5' : '1'
+    }"
+  >
+    Buy Property
+  </button>
+</div>
