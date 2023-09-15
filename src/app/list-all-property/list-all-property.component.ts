@@ -15,18 +15,20 @@ export class ListAllPropertyComponent implements OnInit {
         linkPicture: string;
       }
     | any;
-  @Input('indexItem') index: any;
+
+  @Output() changeStatus: EventEmitter<number> = new EventEmitter();
+  @Output() buyProperty: EventEmitter<number> = new EventEmitter();
   constructor() {}
 
   ngOnInit(): void {}
 
-  checkProperty(index: number) {
-    this.singleProperty[index].isCheck = !this.singleProperty[index].isCheck;
+  onCheckProperty() {
+    this.singleProperty.isCheck = !this.singleProperty.isCheck;
+    this.changeStatus.emit(this.singleProperty);
   }
 
-  buyProperty(index: number) {
-    // alert(`Selamat kamu berhasil membeli ${this.listProperty[index].name}`);
-    // this.listProperty.splice(index, 1);
-    // console.log(this.listProperty);
+  onBuyProperty() {
+    alert(`Selamat kamu berhasil membeli ${this.singleProperty.name}`);
+    this.buyProperty.emit(this.singleProperty);
   }
 }

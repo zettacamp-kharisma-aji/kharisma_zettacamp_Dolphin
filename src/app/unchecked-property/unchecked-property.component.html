@@ -1,0 +1,10 @@
+<div class="property_list" *ngIf="!singleProperty.isCheck">
+  <div class="property_list_imgs">
+    <img class="property_list_img" [src]="singleProperty.linkPicture" />
+  </div>
+  <div class="property_list_detail">
+    <h4 class="property_list_name">{{ singleProperty.name }}</h4>
+    <p class="property_list_price">Rp {{ singleProperty.price }}</p>
+    <p class="property_list_address">{{ singleProperty.address }}</p>
+  </div>
+</div>

@@ -11,15 +11,16 @@
   <p class="properti_name">{{ singleProperty.name }}</p>
   <p class="properti_price">Rp {{ singleProperty.price }}</p>
   <p class="properti_address">{{ singleProperty.address }}</p>
-  <button class="btn btn_check" (click)="checkProperty(index)">
+  <button class="btn btn_check" (click)="onCheckProperty()">
     Cek Property
   </button>
   <button
-    (click)="buyProperty(index)"
     class="btn btn_buy"
+    (click)="onBuyProperty()"
     [disabled]="singleProperty.isCheck === false"
     [ngStyle]="{
-      cursor: singleProperty.isCheck === false ? 'not-allowed' : 'pointer'
+      cursor: singleProperty.isCheck === false ? 'not-allowed' : 'pointer',
+      opacity: singleProperty.isCheck === false ? '0.5' : '1'
     }"
   >
     Buy Property

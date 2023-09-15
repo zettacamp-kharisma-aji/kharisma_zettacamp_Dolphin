@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FormsInputComponent } from './forms-input/forms-input.component';
 import { ListAllPropertyComponent } from './list-all-property/list-all-property.component';
 import { ListStatusPropertyComponent } from './list-status-property/list-status-property.component';
+import { CheckedPropertyComponent } from './checked-property/checked-property.component';
+import { UncheckedPropertyComponent } from './unchecked-property/unchecked-property.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { ListStatusPropertyComponent } from './list-status-property/list-status-
     FormsInputComponent,
     ListAllPropertyComponent,
     ListStatusPropertyComponent,
+    CheckedPropertyComponent,
+    UncheckedPropertyComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

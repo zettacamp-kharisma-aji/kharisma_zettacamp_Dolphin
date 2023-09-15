@@ -9,7 +9,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class AppComponent {
   title = 'cekProperti';
   description = 'Harap masukkan detail properti dengan benar';
-
   listProperty: any = [
     {
       name: 'Rumah Wijaya',
@@ -67,22 +66,9 @@ export class AppComponent {
     }
   }
 
-  onChangeStatus(
-    indexNumber:
-      | {
-          index: number;
-        }
-      | any
-  ) {
-    this.listProperty[indexNumber].isCheck =
-      !this.listProperty[indexNumber].isCheck;
-  }
+  onCheckProperty(index: number) {}
 
-  onBuyProperty(
-    indexNumber:
-      | {
-          index: number;
-        }
-      | any
-  ) {}
+  onBuyProperty(data: any, index: number) {
+    this.listProperty.splice(index, 1);
+  }
 }
